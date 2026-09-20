@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-        content="Personal portfolio of an Artificial Intelligence and Data Science student, showcasing projects, skills, and achievements.">
+        content="Iceee — AI & Data Science student building practical technology, data, and AI projects.">
 
     <title>Iceee | AI & Data Science</title>
 
@@ -16,6 +15,14 @@
 
 <body>
 
+    <!-- ================= BACKGROUND ================= -->
+
+    <div class="background-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <canvas id="particleCanvas"></canvas>
+
     <!-- ================= HEADER ================= -->
 
     <header>
@@ -23,30 +30,21 @@
         <nav>
 
             <div class="logo">
-                <a href="#home">ICEEE.</a>
+                <a href="#home">ICEEE<span>.</span></a>
             </div>
 
             <ul class="nav-links">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button id="themeToggle" aria-label="Toggle theme">
+                ☀
+            </button>
 
         </nav>
 
@@ -57,19 +55,23 @@
 
     <main>
 
+        <!-- ================= HERO ================= -->
 
-        <!-- ================= HERO SECTION ================= -->
+        <section id="home" class="hero">
 
-        <section id="home">
+            <div class="hero-content reveal">
 
-            <div class="hero-content">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    Currently learning & building
+                </div>
 
                 <p class="intro">
                     Hello, I'm
                 </p>
 
                 <h1>
-                    Iceee
+                    Iceee<span>.</span>
                 </h1>
 
                 <h2>
@@ -77,206 +79,285 @@
                 </h2>
 
                 <p class="hero-description">
-                    I’m passionate about technology, problem-solving,
-                    and building practical solutions using software,
-                    data, and artificial intelligence.
+                    I’m exploring the intersection of software, data,
+                    artificial intelligence, and creative problem-solving.
+                    I learn by building — one project at a time.
                 </p>
 
                 <div class="hero-buttons">
 
-                    <a href="#projects">
+                    <a href="#projects" class="primary-btn">
                         Explore My Work
+                        <span>↗</span>
                     </a>
 
-                    <a href="#contact">
-                        Get In Touch
+                    <a href="#contact" class="secondary-btn">
+                        Let's Connect
                     </a>
 
                 </div>
+
+                <div class="hero-scroll">
+                    <span></span>
+                    Scroll to explore
+                </div>
+
+            </div>
+
+
+            <!-- AI NETWORK -->
+
+            <div class="ai-network">
+
+                <div class="network-core">
+                    <span>AI</span>
+                </div>
+
+                <div class="network-node node-one">PY</div>
+                <div class="network-node node-two">DATA</div>
+                <div class="network-node node-three">ML</div>
+                <div class="network-node node-four">WEB</div>
+
+                <div class="network-line line-one"></div>
+                <div class="network-line line-two"></div>
+                <div class="network-line line-three"></div>
+                <div class="network-line line-four"></div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= ABOUT SECTION ================= -->
+        <!-- ================= ABOUT ================= -->
 
         <section id="about">
 
-            <div class="section-heading">
+            <div class="section-heading reveal">
 
-                <p>
-                    GET TO KNOW ME
-                </p>
+                <p>01 / ABOUT</p>
 
                 <h2>
-                    About Me
+                    Building my way<br>
+                    into technology.
                 </h2>
 
             </div>
 
-            <div class="about-content">
+            <div class="about-grid">
 
-                <div class="about-text">
+                <div class="about-text reveal">
 
                     <p>
                         I am an Artificial Intelligence and Data Science
                         student interested in understanding how technology
-                        can be used to solve real-world problems.
+                        can solve real-world problems.
                     </p>
 
                     <p>
-                        Currently, I am developing my foundations in
-                        programming, web development, databases,
-                        data structures, and artificial intelligence.
+                        Right now, I am strengthening my foundations in
+                        programming, web development, databases, data
+                        structures, data science, and artificial intelligence.
                     </p>
 
                     <p>
-                        My goal is to continuously learn, build meaningful
-                        projects, and grow into an industry-ready
-                        technology professional.
+                        Rather than only learning theory, I want to turn
+                        what I learn into projects and gradually build
+                        systems that are useful, creative, and meaningful.
                     </p>
 
                 </div>
 
-            </div>
+                <div class="about-card reveal">
 
-        </section>
+                    <div class="card-orbit"></div>
 
+                    <div class="about-card-content">
 
-        <!-- ================= SKILLS SECTION ================= -->
-
-        <section id="skills">
-
-            <div class="section-heading">
-
-                <p>
-                    WHAT I WORK WITH
-                </p>
-
-                <h2>
-                    Skills & Technologies
-                </h2>
-
-            </div>
-
-
-            <div class="skills-container">
-
-
-                <div class="skill-category">
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <ul>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="skill-category">
-
-                    <h3>
-                        Web Development
-                    </h3>
-
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="skill-category">
-
-                    <h3>
-                        Data & AI
-                    </h3>
-
-                    <ul>
-                        <li>Data Science</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Data Structures</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="skill-category">
-
-                    <h3>
-                        Tools
-                    </h3>
-
-                    <ul>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>VS Code</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS SECTION ================= -->
-
-        <section id="projects">
-
-            <div class="section-heading">
-
-                <p>
-                    WHAT I'VE BUILT
-                </p>
-
-                <h2>
-                    Featured Projects
-                </h2>
-
-            </div>
-
-
-            <div class="projects-container">
-
-
-                <!-- Project 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-content">
-
-                        <p class="project-number">
-                            01
-                        </p>
+                        <span>01</span>
 
                         <h3>
-                            Personal Portfolio
+                            Learn.<br>
+                            Build.<br>
+                            Evolve.
                         </h3>
 
                         <p>
-                            A personal portfolio website designed to
-                            showcase my technical skills, projects,
-                            achievements, and learning journey.
+                            My current philosophy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills">
+
+            <div class="section-heading reveal">
+
+                <p>02 / SKILLS</p>
+
+                <h2>
+                    Tools I'm<br>
+                    learning with.
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <article class="skill-card reveal">
+
+                    <span class="skill-number">01</span>
+
+                    <div class="skill-icon">⌘</div>
+
+                    <h3>Programming</h3>
+
+                    <p>
+                        Building my programming fundamentals
+                        and problem-solving ability.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <span class="skill-number">02</span>
+
+                    <div class="skill-icon">&lt;/&gt;</div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Creating responsive and interactive
+                        web experiences.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <span class="skill-number">03</span>
+
+                    <div class="skill-icon">◈</div>
+
+                    <h3>Data & AI</h3>
+
+                    <p>
+                        Exploring data, artificial intelligence,
+                        and machine learning concepts.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Data</span>
+                        <span>AI</span>
+                        <span>DSA</span>
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card reveal">
+
+                    <span class="skill-number">04</span>
+
+                    <div class="skill-icon">⚙</div>
+
+                    <h3>Developer Tools</h3>
+
+                    <p>
+                        Learning the tools and workflows used
+                        to build and manage projects.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects">
+
+            <div class="section-heading reveal">
+
+                <p>03 / PROJECTS</p>
+
+                <h2>
+                    Things I've<br>
+                    started building.
+                </h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project-card featured reveal">
+
+                    <div class="project-top">
+
+                        <span>PROJECT / 01</span>
+
+                        <span class="project-arrow">↗</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-label">
+                            PERSONAL PROJECT
+                        </p>
+
+                        <h3>
+                            Personal<br>
+                            Portfolio
+                        </h3>
+
+                        <p>
+                            An interactive portfolio built to document
+                            my technical journey, projects, skills,
+                            and continuous learning.
                         </p>
 
                         <div class="project-tech">
-
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
-
+                            <span>GitHub Pages</span>
                         </div>
 
-                        <a href="#">
-                            View Project →
+                        <a href="#contact">
+                            Explore project
+                            <span>→</span>
                         </a>
 
                     </div>
@@ -284,87 +365,149 @@
                 </article>
 
 
-                <!-- Project 2 -->
+                <article class="project-card reveal">
 
-                <article class="project-card">
+                    <div class="project-top">
+
+                        <span>PROJECT / 02</span>
+
+                        <span class="project-status">
+                            IN PROGRESS
+                        </span>
+
+                    </div>
 
                     <div class="project-content">
 
-                        <p class="project-number">
-                            02
+                        <p class="project-label">
+                            NEXT BUILD
                         </p>
 
                         <h3>
-                            Project Coming Soon
+                            AI / Data<br>
+                            Project
                         </h3>
 
                         <p>
-                            I'm currently working on new projects
-                            that combine programming, data, and
-                            artificial intelligence.
+                            Exploring how programming, data,
+                            and artificial intelligence can come
+                            together to solve a practical problem.
                         </p>
 
                         <div class="project-tech">
-
                             <span>Python</span>
-                            <span>AI</span>
                             <span>Data</span>
-
+                            <span>AI</span>
                         </div>
 
                     </div>
 
                 </article>
 
-
             </div>
 
         </section>
 
 
-        <!-- ================= ACHIEVEMENTS SECTION ================= -->
+        <!-- ================= JOURNEY ================= -->
 
-        <section id="achievements">
+        <section id="journey">
 
-            <div class="section-heading">
+            <div class="section-heading reveal">
 
-                <p>
-                    MY JOURNEY
-                </p>
+                <p>04 / JOURNEY</p>
 
                 <h2>
-                    Achievements & Learning
+                    Learning in<br>
+                    progress.
                 </h2>
 
             </div>
 
 
-            <div class="achievement-list">
+            <div class="timeline">
 
-                <div class="achievement">
+                <div class="timeline-item reveal">
 
-                    <h3>
-                        Artificial Intelligence & Data Science
-                    </h3>
+                    <div class="timeline-dot"></div>
 
-                    <p>
-                        Currently pursuing my undergraduate studies
-                        in Artificial Intelligence and Data Science.
-                    </p>
+                    <span>01</span>
+
+                    <div>
+                        <h3>Web Development</h3>
+                        <p>
+                            Building my first responsive websites
+                            using HTML, CSS and JavaScript.
+                        </p>
+                    </div>
 
                 </div>
 
 
-                <div class="achievement">
+                <div class="timeline-item reveal">
 
-                    <h3>
-                        Continuous Learning
-                    </h3>
+                    <div class="timeline-dot"></div>
 
-                    <p>
-                        Building projects and strengthening my
-                        programming and problem-solving skills.
-                    </p>
+                    <span>02</span>
+
+                    <div>
+                        <h3>Git & GitHub</h3>
+                        <p>
+                            Learning version control, repositories,
+                            commits, branches, and deployment.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <span>03</span>
+
+                    <div>
+                        <h3>Data Structures</h3>
+                        <p>
+                            Strengthening problem-solving and
+                            understanding core data structures.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <span>04</span>
+
+                    <div>
+                        <h3>AI & Data Science</h3>
+                        <p>
+                            Moving deeper into data analysis,
+                            machine learning, and AI systems.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item future reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <span>05</span>
+
+                    <div>
+                        <h3>Build Something Meaningful</h3>
+                        <p>
+                            Turning everything I learn into
+                            practical and innovative projects.
+                        </p>
+                    </div>
 
                 </div>
 
@@ -373,44 +516,41 @@
         </section>
 
 
-        <!-- ================= CONTACT SECTION ================= -->
+        <!-- ================= CONTACT ================= -->
 
         <section id="contact">
 
-            <div class="section-heading">
+            <div class="contact-wrapper reveal">
 
-                <p>
-                    LET'S CONNECT
+                <p class="contact-label">
+                    05 / LET'S CONNECT
                 </p>
 
                 <h2>
-                    Get In Touch
+                    Have an idea?<br>
+                    Let's build.
                 </h2>
 
-            </div>
-
-
-            <div class="contact-content">
-
                 <p>
-                    I'm always interested in learning, building,
-                    collaborating, and connecting with people
-                    who share an interest in technology.
+                    I'm interested in learning, collaborating,
+                    experimenting, and building meaningful
+                    technology.
                 </p>
-
 
                 <div class="contact-links">
 
                     <a href="mailto:your-email@example.com">
-                        Email
+                        Email ↗
                     </a>
 
-                    <a href="https://github.com/" target="_blank">
-                        GitHub
+                    <a href="https://github.com/ishwaryam2808"
+                        target="_blank">
+                        GitHub ↗
                     </a>
 
-                    <a href="https://www.linkedin.com/" target="_blank">
-                        LinkedIn
+                    <a href="https://www.linkedin.com/"
+                        target="_blank">
+                        LinkedIn ↗
                     </a>
 
                 </div>
@@ -426,15 +566,24 @@
 
     <footer>
 
-        <p>
-            © 2026 Iceee. Built with curiosity & code.
-        </p>
+        <div>
+            © <span id="currentYear"></span> Iceee.
+        </div>
+
+        <div>
+            Built with curiosity & code.
+        </div>
 
     </footer>
 
 
+    <button id="scrollTop" aria-label="Scroll to top">
+        ↑
+    </button>
+
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
-
