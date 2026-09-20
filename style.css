@@ -251,6 +251,7 @@ nav {
     );
 
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 
     margin-bottom: 20px;
